@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/cecc1006cb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logoML.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi, My name is<br /><span>M</span>aksim <span>L</span>evanovich
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!----------------- about---------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/left-blury-photo.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"><span>A</span>bout Me</h1>
+            <p>
+              I'm Max Levanovich, an aspiring Software Engineer with expertise
+              in front-end and full-stack development. Currently pursuing an AAS
+              in Software Development at Hennepin Technical College, I
+              specialize in React, Node.js, Python, and C#, building dynamic web
+              applications and integrating APIs.
+            </p>
+            <br />
+            <p>
+              With a background in leadership and problem-solving from my
+              previous role at the US Embassy, I bring strong analytical skills
+              and adaptability to software development. Passionate about coding,
+              continuous learning, and open-source contributions, I thrive on
+              creating scalable, innovative solutions.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span> <br />Designing Web Interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021 - Current</span><br />UI/UX Design</li>
+                <li><span>2017- Current</span><br />Web app Development</li>
+                <li>
+                  <span>2022 - Current </span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021</span> <br />Designing Web Interfaces</li>
+                <li><span>2021</span><br />Web app Development</li>
+                <li><span>2022</span><br />Building Android/iOS apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------ Services------ -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Crafting **responsive, high-performance websites** using modern
+              technologies like **React, Node.js, and EJS**. I specialize in
+              creating **interactive UIs, optimized user experiences, and
+              scalable full-stack applications**.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Designing **visually appealing and user-friendly interfaces** that
+              focus on **accessibility, aesthetics, and seamless interactions**.
+              I create intuitive digital experiences that enhance user
+              engagement.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Full-Stack Development</h2>
+            <p>
+              Building **dynamic web applications** with **front-end and
+              back-end integration**. I develop and manage **SQL databases,
+              RESTful APIs, authentication systems, and server-side logic** for
+              scalable solutions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------- Portfolio----------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/portfolio1.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Portfolio2.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/portfolio3.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!---------------- Contact---------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>maxlevanovich@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+1 (612) 978 7176</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/resume.docx" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                id="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2" onclick="sendMail()">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright <span><i class="fa-solid fa-copyright"></i></span> Maksim
+          Levanovich.
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
