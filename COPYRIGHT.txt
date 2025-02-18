@@ -1,0 +1,9 @@
+Copyright Notice
+
+Copyright (c) 2025 Maksim Levanovich. All rights reserved.
+
+This website, including all content, code, and design elements, is the intellectual property of Maksim Levanovich. Unauthorized reproduction, distribution, or modification of any part of this site without explicit permission is strictly prohibited.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
