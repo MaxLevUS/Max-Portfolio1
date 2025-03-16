@@ -43,7 +43,6 @@ nav ul li {
   margin: 10px 20px;
 }
 
-
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -383,7 +382,6 @@ nav .fa-solid {
     background-image: url(images/BackgroundMain.png);
   }
 
-
   .header-text p {
     font-size: 40px;
     margin-top: 340px;
@@ -396,7 +394,6 @@ nav .fa-solid {
   .header-text h1 {
     font-size: 30px;
   }
-  
 
   nav .fa-solid {
     display: block;
@@ -463,19 +460,31 @@ nav .fa-solid {
 
 #message-status {
   display: none; /* Hidden by default */
-  justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  padding: 15px;
+  width: auto;
+  max-width: 80%;
+  padding: 15px 20px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
   z-index: 1000;
+  background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+  color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Success message */
+.message-success {
+  background-color: #4caf50;
+}
+
+/* Error message */
+.message-error {
+  background-color: #f44336;
 }
 
 /* Success message styling */
