@@ -25,7 +25,6 @@ body {
 .container {
   padding: 10px 10%;
 }
-/* separated logo from navbar */
 
 nav {
   display: flex;
@@ -38,14 +37,12 @@ nav {
   width: 140px;
 }
 
-/* made the navbar stand in one line */
 nav ul li {
   display: inline-flex;
   list-style: none;
   margin: 10px 20px;
 }
 
-/* fixed the color and size of the navbar , also added position:relative*/
 
 nav ul li a {
   color: #fff;
@@ -145,10 +142,6 @@ nav ul li a:hover::after {
 .tab-links.active-link::after {
   width: 50%;
 }
-
-/* .tab-links:hover::after {
-  width: 100%;
-} */
 
 .tab-contents ul li {
   list-style: none;
@@ -390,21 +383,20 @@ nav .fa-solid {
     background-image: url(images/BackgroundMain.png);
   }
 
-  /* .header-text {
-    margin-top: 100%;
-    font-size: 16px;
-  } */
+
   .header-text p {
     font-size: 40px;
     margin-top: 340px;
   }
 
+  .header-text p span {
+    display: block;
+  }
+
   .header-text h1 {
     font-size: 30px;
   }
-  /* .header-text h1 {
-    font-size: 30px;
-  } */
+  
 
   nav .fa-solid {
     display: block;
