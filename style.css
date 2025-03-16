@@ -471,6 +471,7 @@ nav .fa-solid {
 
 #message-status {
   display: none; /* Hidden by default */
+  justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
