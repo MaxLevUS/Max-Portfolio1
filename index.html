@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio2</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,9 +35,7 @@
 
         <div class="header-text">
           <p>Frontend Developer</p>
-          <h1>
-            Hi, My name is<br /><span>M</span>aksim <span>L</span>evanovich
-          </h1>
+          <h1>Hi, My name is<br /><span>M</span>aks <span>L</span>ev</h1>
         </div>
       </div>
     </div>
@@ -97,9 +95,18 @@
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li><span>2019 - 2024</span> <br />Emperor Alexander I St. Petersburg State Transport University Psychology Faculty</li>
-                <li><span>2024-2026</span><br />Associate of Applied Science (AAS) in Software Development</li>
-                <li><span>2021-2022</span><br />Software Development Bootcamp ITEA Educational Center</li>
+                <li>
+                  <span>2019 - 2024</span> <br />Emperor Alexander I St.
+                  Petersburg State Transport University Psychology Faculty
+                </li>
+                <li>
+                  <span>2024-2026</span><br />Associate of Applied Science (AAS)
+                  in Software Development
+                </li>
+                <li>
+                  <span>2021-2022</span><br />Software Development Bootcamp ITEA
+                  Educational Center
+                </li>
               </ul>
             </div>
           </div>
@@ -181,7 +188,9 @@
             <div class="layer">
               <h3>Social Media App</h3>
               <p>Fitness center</p>
-              <a href="https://maxlevus.github.io/Fitness-Center/"  target="blank"
+              <a
+                href="https://maxlevus.github.io/Fitness-Center/"
+                target="blank"
                 ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -199,7 +208,7 @@
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
             <p>
-              <i class="fa-solid fa-paper-plane"></i>levanovichmaksim35@gmail.com
+              <i class="fa-solid fa-paper-plane"></i>makslevsoftdev@gmail.com
             </p>
             <p><i class="fa-solid fa-square-phone"></i>+1 (612) 978 7176</p>
             <div class="social-icons">
@@ -221,7 +230,7 @@
             >
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet">
+            <form id="contact-form">
               <input
                 type="text"
                 name="Name"
@@ -243,18 +252,17 @@
                 placeholder="Your Message"
                 required
               ></textarea>
-              <button type="submit" class="btn btn2" onclick="sendMail(levanovichmaksim35@gmail.com)">
-                Submit
-              </button>
+              <button type="submit" class="btn btn2">Submit</button>
             </form>
           </div>
         </div>
       </div>
+      <div id="message-status"></div>
 
       <div class="copyright">
         <p>
-          Copyright 2025 <span><i class="fa-solid fa-copyright"></i></span> Maksim
-          Levanovich.
+          Copyright <span id="currentYear"></span>
+          <span><i class="fa-solid fa-copyright"></i></span> Maks Lev.
         </p>
       </div>
     </div>

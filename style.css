@@ -468,3 +468,31 @@ nav .fa-solid {
     font-size: 30px;
   }
 }
+
+#message-status {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Success message styling */
+.message-success {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+/* Error message styling */
+.message-error {
+  background-color: #f44336; /* Red */
+  color: white;
+}
